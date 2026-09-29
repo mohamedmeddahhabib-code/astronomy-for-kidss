@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astronomy for Kids</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="Astronomy%20for%20Kids_files/css2_BLHc.css" rel="stylesheet">
+<link rel="stylesheet" href="Astronomy%20for%20Kids_files/style_BLHc.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#top" class="logo">Astronomy for Kids</a>
+  <nav>
+    <a href="#planets">Planets</a>
+    <a href="#moon">Moon</a>
+    <a href="#glossary">Definitions</a>
+    <a href="#pdf">Read the PDF</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Astronomy for Kids</h1>
+      <p>Journey through the Solar System, meet the 8 planets, and learn what stars, galaxies and black holes really are.</p>
+      <a class="btn" href="#planets">Start the journey</a>
+    </div>
+    <div class="system" id="system" aria-hidden="true"><div class="sun"></div><div class="orbit" style="width: 24%; height: 24%; animation-duration: 9s;"><i style="width:10px;height:10px;background:radial-gradient(circle at 32% 30%,#d8cfc6,#8a7d72 55%,#4d443d)"></i></div><div class="orbit" style="width: 33.5%; height: 33.5%; animation-duration: 15s;"><i style="width:13px;height:13px;background:radial-gradient(circle at 32% 30%,#f7dfae,#d9a45c 55%,#7a5426)"></i></div><div class="orbit" style="width: 43%; height: 43%; animation-duration: 21s;"><i style="width:13px;height:13px;background:radial-gradient(circle at 32% 30%,#8fd0ff,#2a74d6 45%,#1e8f4e 70%,#0b3a6e)"></i></div><div class="orbit" style="width: 52.5%; height: 52.5%; animation-duration: 27s;"><i style="width:11px;height:11px;background:radial-gradient(circle at 32% 30%,#ffb083,#c1440e 55%,#5b1c06)"></i></div><div class="orbit" style="width: 62%; height: 62%; animation-duration: 33s;"><i style="width:16px;height:16px;background:linear-gradient(170deg,#f2d7b0 0 12%,#c98a50 12% 24%,#f0d0a0 24% 38%,#b5703a 38% 50%,#e9c592 50% 66%,#c98a50 66% 80%,#efd2a8 80%)"></i></div><div class="orbit" style="width: 71.5%; height: 71.5%; animation-duration: 39s;"><i style="width:14px;height:14px;background:linear-gradient(170deg,#f7e6b8 0 20%,#d9b878 20% 40%,#f1dca4 40% 62%,#c9a566 62% 80%,#eed9a0 80%)"></i></div><div class="orbit" style="width: 81%; height: 81%; animation-duration: 45s;"><i style="width:13px;height:13px;background:radial-gradient(circle at 32% 30%,#c4fbf8,#5fc9d0 55%,#1f6e7a)"></i></div><div class="orbit" style="width: 90.5%; height: 90.5%; animation-duration: 51s;"><i style="width:13px;height:13px;background:radial-gradient(circle at 32% 30%,#8fb2ff,#2f5fdc 55%,#0c1f6b)"></i></div></div>
+  </section>
+
+  <section id="planets" class="block">
+    <h2>The 8 Planets</h2>
+    <p class="lead">The Solar System is the Sun and everything that orbits around it. Pick a planet.</p>
+    <div class="picker" id="picker" role="tablist"><button role="tab" aria-selected="false"><span class="dot" style="background:radial-gradient(circle at 32% 30%,#d8cfc6,#8a7d72 55%,#4d443d)"></span>Mercury</button><button role="tab" aria-selected="false"><span class="dot" style="background:radial-gradient(circle at 32% 30%,#f7dfae,#d9a45c 55%,#7a5426)"></span>Venus</button><button role="tab" aria-selected="true"><span class="dot" style="background:radial-gradient(circle at 32% 30%,#8fd0ff,#2a74d6 45%,#1e8f4e 70%,#0b3a6e)"></span>Earth</button><button role="tab" aria-selected="false"><span class="dot" style="background:radial-gradient(circle at 32% 30%,#ffb083,#c1440e 55%,#5b1c06)"></span>Mars</button><button role="tab" aria-selected="false"><span class="dot" style="background:linear-gradient(170deg,#f2d7b0 0 12%,#c98a50 12% 24%,#f0d0a0 24% 38%,#b5703a 38% 50%,#e9c592 50% 66%,#c98a50 66% 80%,#efd2a8 80%)"></span>Jupiter</button><button role="tab" aria-selected="false"><span class="dot" style="background:linear-gradient(170deg,#f7e6b8 0 20%,#d9b878 20% 40%,#f1dca4 40% 62%,#c9a566 62% 80%,#eed9a0 80%)"></span>Saturn</button><button role="tab" aria-selected="false"><span class="dot" style="background:radial-gradient(circle at 32% 30%,#c4fbf8,#5fc9d0 55%,#1f6e7a)"></span>Uranus</button><button role="tab" aria-selected="false"><span class="dot" style="background:radial-gradient(circle at 32% 30%,#8fb2ff,#2f5fdc 55%,#0c1f6b)"></span>Neptune</button></div>
+    <div class="stage">
+      <div class="planet-wrap" id="planetWrap"><div class="planet" id="planet" style="--bg-planet: radial-gradient(circle at 32% 30%,#8fd0ff,#2a74d6 45%,#1e8f4e 70%,#0b3a6e); --size: 180px; --glow: #4ea3ff55;"></div></div>
+      <div class="info" id="info" aria-live="polite">
+        <h3 id="pName" style="--pc: #4ea3ff;">3. Earth</h3>
+        <p class="tag" id="pTag">The third planet, the only one known to support life</p>
+        <ul id="pFacts"><li>An atmosphere rich in oxygen, liquid water and a varied climate.</li><li>Its surface is made up of continents, oceans and great biodiversity.</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="moon" class="block alt">
+    <h2>The Phases of the Moon</h2>
+    <p class="lead">The Moon is Earth's natural satellite. It shines because it reflects the Sun's light.</p>
+    <div class="phases" id="phases"><button aria-pressed="false"><span>🌑</span>New Moon</button><button aria-pressed="false"><span>🌒</span>Waxing Crescent</button><button aria-pressed="false"><span>🌓</span>First Quarter</button><button aria-pressed="false"><span>🌔</span>Waxing Gibbous</button><button aria-pressed="true"><span>🌕</span>Full Moon</button><button><span>🌖</span>Waning Gibbous</button><button><span>🌗</span>Last (Third) Quarter</button><button><span>🌘</span>Waning Crescent</button></div>
+    <p class="phase-text" id="phaseText" aria-live="polite"><strong>Full Moon:</strong> The whole Moon is lit and visible in the sky.</p>
+  </section>
+
+  <section id="glossary" class="block">
+    <h2>Definitions</h2>
+    <input id="search" type="search" placeholder="Search a word, like galaxy" aria-label="Search definitions">
+    <div class="terms" id="terms"><div class="term" tabindex="0" style="--c: #ff4fa0;" data-w="astronomy the science that studies stars, planets, and the universe. it helps us understand our place in the cosmos."><h3>Astronomy</h3><p>The science that studies stars, planets, and the universe. It helps us understand our place in the cosmos.</p></div><div class="term" tabindex="0" style="--c: #8a4fff;" data-w="milky way the galaxy in which our solar system is located. it is a spiral galaxy made of hundreds of billions of stars, plus gas, dust, and dark matter."><h3>Milky Way</h3><p>The galaxy in which our solar system is located. It is a spiral galaxy made of hundreds of billions of stars, plus gas, dust, and dark matter.</p></div><div class="term" tabindex="0" style="--c: #ffd93b;" data-w="solar system a group that includes the sun and all the objects that orbit around it."><h3>Solar System</h3><p>A group that includes the Sun and all the objects that orbit around it.</p></div><div class="term" tabindex="0" style="--c: #ff9d2e;" data-w="sun a yellow dwarf star at the center of the solar system. it is made mainly of hydrogen and helium and holds more than 99% of the solar system's mass."><h3>Sun</h3><p>A yellow dwarf star at the center of the Solar System. It is made mainly of hydrogen and helium and holds more than 99% of the Solar System's mass.</p></div><div class="term" tabindex="0" style="--c: #4ea3ff;" data-w="planet there are 8 planets that orbit around the sun, from mercury to neptune."><h3>Planet</h3><p>There are 8 planets that orbit around the Sun, from Mercury to Neptune.</p></div><div class="term" tabindex="0" style="--c: #b9b5e6;" data-w="moon earth's natural satellite. it shines by reflecting the sun's light and helps create the ocean tides."><h3>Moon</h3><p>Earth's natural satellite. It shines by reflecting the Sun's light and helps create the ocean tides.</p></div><div class="term" tabindex="0" style="--c: #ffd93b;" data-w="star an enormous ball of very hot gas that produces its own light and heat through nuclear reactions. the sun is a star."><h3>Star</h3><p>An enormous ball of very hot gas that produces its own light and heat through nuclear reactions. The Sun is a star.</p></div><div class="term" tabindex="0" style="--c: #ff4fa0;" data-w="black hole a region in space where gravity is so strong that nothing can escape, not even light. it forms when a very massive star dies and collapses."><h3>Black hole</h3><p>A region in space where gravity is so strong that nothing can escape, not even light. It forms when a very massive star dies and collapses.</p></div><div class="term" tabindex="0" style="--c: #8a4fff;" data-w="galaxy a huge group of stars, gas, and dust. there are billions of galaxies in the universe."><h3>Galaxy</h3><p>A huge group of stars, gas, and dust. There are billions of galaxies in the Universe.</p></div><div class="term" tabindex="0" style="--c: #ff7a45;" data-w="asteroid a small rocky body that orbits the sun. most are found in the asteroid belt between mars and jupiter."><h3>Asteroid</h3><p>A small rocky body that orbits the Sun. Most are found in the asteroid belt between Mars and Jupiter.</p></div><div class="term" tabindex="0" style="--c: #e0a86f;" data-w="gas giant a planet made mostly of hydrogen and helium, like jupiter and saturn."><h3>Gas giant</h3><p>A planet made mostly of hydrogen and helium, like Jupiter and Saturn.</p></div><div class="term" tabindex="0" style="--c: #7de3e0;" data-w="ice giant a planet made mostly of gas and ice, like uranus and neptune."><h3>Ice giant</h3><p>A planet made mostly of gas and ice, like Uranus and Neptune.</p></div></div>
+    <p class="empty" id="empty" hidden="">No matching word. Try another one.</p>
+  </section>
+
+  <section id="pdf" class="block alt">
+    <h2>Read the Document</h2>
+    <p class="lead">The full book, right here on the page.</p>
+    <iframe class="viewer" src="Astronomy%20for%20Kids_files/astronomy_002_BLHc.pdf" title="Astronomy for Kids, part 1"></iframe>
+    <p><a class="btn" href="http://127.0.0.1:5500/pdf/astronomy.pdf" download="">Download the PDF</a></p>
+  </section>
+</main>
+
+<footer>Astronomy for Kids, part 1, by Meddah Safaâ</footer>
+<script src="Astronomy%20for%20Kids_files/script_BLHc.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
